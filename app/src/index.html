@@ -29,14 +29,14 @@
             <div>Temperature</div>
             <div>
               <h1 id="temperature" class="display-1">...</h1>
-              <span id="temperature-val" class="text-light"></span>
+              <span id="temperature-val" class="text-monospace text-light"></span>
             </div>
           </div>
           <div class="col text-white bg-success m-2 p-4">
             <div>Humidity</div>
             <div>
               <h1 id="humidity" class="display-1">...</h1>
-              <span id="humidity-val" class="text-light"></span>
+              <span id="humidity-val" class="text-monospace text-light"></span>
             </div>
           </div>
         </div>
@@ -45,7 +45,17 @@
 
     <footer class="footer mt-auto py-3">
       <div class="container text-monospace">
-        <span id="time" class="text-muted"></span>
+        <ul class="nav">
+          <li class="nav-item mr-3">
+            <span class="text-muted"><a class="text-muted" href="./charts">Charts</a></span>
+          </li>
+          <li class="nav-item mr-3">
+            <span class="text-muted">|</span>
+          </li>
+          <li class="nav-item">
+            <span id="time" class="text-muted"></span>
+          </li>
+        </ul>
       </div>
     </footer>
 

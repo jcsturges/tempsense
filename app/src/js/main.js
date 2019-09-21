@@ -22,7 +22,7 @@
       f = t.f,
       c = t.c;
 
-    $ts.text(ts ? ('Updated: ' + (new Date(ts)).toLocaleString()) : '')
+    $ts.html(ts ? ('Updated: ' + (new Date(ts)).toLocaleString()) : '')
 
     $temp.html(f !== undefined ? parseFloat(f.toFixed(1)) + '&deg;F' : '...');
     $tempVal.text(f);
