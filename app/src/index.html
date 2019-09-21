@@ -7,50 +7,49 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="robots" content="noindex, nofollow">
 
-      <title>Room Climate Sensors</title>
+      <title>Room Sensors</title>
 
       <link rel="stylesheet" href="css/dist/bootstrap-4.3.1.min.css">
       <link rel="stylesheet" href="css/main.css?v=2019-09-21">
   </head>
 
-  <body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column h-100 bg-dark text-white">
 
     <main role="main" class="flex-shrink-0">
-      <div class="container">
-        <h1 class="mt-5">Room Climate Sensors</h1>
-        <p class="lead">Reading humidity and temperature data all around you, all the time.</p>
-        <p>View the README and get the code on <a href="https://github.com/jcsturges/tempsense" target="_blank" rel="noreferrer nofollow noopener">GitHub</a>. Created by <a href="https://jsturges.com" target="_blank" rel="noopener">James Sturges</a>.</p>
+      <div class="container text-white">
+        <h1 class="mt-5">Room Sensors</h1>
+        <p id="timestamp"></p>
       </div>
     </main>
 
-    <div class="container">
-      <div class="row">
-        <!-- dials -->
-        <div class="col">
-          <div id="temp-dial" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
-        </div>
-        <div class="col">
-          <div id="hum-dial" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- timeseries -->
-        <div class="col">
-          <div id="temp-series" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-white bg-primary m-2 p-4">
+            <div>Temperature</div>
+            <div>
+              <h1 id="temperature" class="display-1">...</h1>
+              <span id="temperature-val" class="text-light"></span>
+            </div>
+          </div>
+          <div class="col text-white bg-success m-2 p-4">
+            <div>Humidity</div>
+            <div>
+              <h1 id="humidity" class="display-1">...</h1>
+              <span id="humidity-val" class="text-light"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <footer class="footer mt-auto py-3">
       <div class="container text-monospace">
-        <span id="timestamp" class="text-muted"></span>
+        <span id="time" class="text-muted"></span>
       </div>
     </footer>
 
     <script src="js/dist/jquery-1.12.4.min.js"></script>
-    <script src="js/dist/highcharts-7.2.0.min.js"></script>
-    <script src="js/dist/highcharts-more-7.2.0.min.js"></script>
     <script src="js/main.js?v=2019-09-21"></script>
   </body>
 </html>
