@@ -1,0 +1,18 @@
+{
+  "name": "tempsense",
+  "version": "1.0.0",
+  "description": "Raspberry Pi IoT: Temperature and Humidity Monitor",
+  "repository": "https://github.com/jcsturges/tempsense.git",
+  "author": "James Sturges <james@jsturges.com>",
+  "license": "GNU GPLv3",
+  "private": false,
+  "scripts": {
+    "watch": "nodemon --watch src -r esm server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2"
+  }
+}

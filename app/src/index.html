@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="robots" content="noindex, nofollow">
+
+      <title>Room Climate Sensors</title>
+
+      <link rel="stylesheet" href="css/dist/bootstrap-4.3.1.min.css">
+      <link rel="stylesheet" href="css/main.css?v=2019-09-21">
+  </head>
+
+  <body class="d-flex flex-column h-100">
+
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">Room Climate Sensors</h1>
+        <p class="lead">Reading humidity and temperature data all around you, all the time.</p>
+        <p>View the README and get the code on <a href="https://github.com/jcsturges/tempsense" target="_blank" rel="noreferrer nofollow noopener">GitHub</a>. Created by <a href="https://jsturges.com" target="_blank" rel="noopener">James Sturges</a>.</p>
+      </div>
+    </main>
+
+    <div class="container">
+      <div class="row">
+        <!-- dials -->
+        <div class="col">
+          <div id="temp-dial" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
+        </div>
+        <div class="col">
+          <div id="hum-dial" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- timeseries -->
+        <div class="col">
+          <div id="temp-series" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container text-monospace">
+        <span id="timestamp" class="text-muted"></span>
+      </div>
+    </footer>
+
+    <script src="js/dist/jquery-1.12.4.min.js"></script>
+    <script src="js/dist/highcharts-7.2.0.min.js"></script>
+    <script src="js/dist/highcharts-more-7.2.0.min.js"></script>
+    <script src="js/main.js?v=2019-09-21"></script>
+  </body>
+</html>
