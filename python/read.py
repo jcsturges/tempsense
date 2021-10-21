@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Author: James Sturges
@@ -9,7 +9,8 @@ import Adafruit_DHT, datetime, json, os, sys, time
 PWD = os.path.dirname(os.path.realpath(__file__))
 ARGS = sys.argv
 
-SENSOR = Adafruit_DHT.AM2302
+# SENSOR = Adafruit_DHT.AM2302
+SENSOR = Adafruit_DHT.DHT22
 PIN = 4
 INTERVAL_SECONDS = 5
 FOUT = 'data.json'
@@ -38,10 +39,12 @@ while True:
 
     # optionally pass dir for output, else use this file's dir
     output = '{0}/{1}'.format(ARGS[1] if len(ARGS) > 1 else PWD, FOUT)
-    with file(output, 'w') as dest:
+    with open(output, 'w') as dest:
         dest.write(data_fmt)
 
     print(data_fmt)
     print(' => saved to: {}'.format(output))
 
-    time.sleep(INTERVAL_SECONDS)
+    # TODO: skip sleeping, break from while - hack to generate on script run instead of persistent
+    #time.sleep(INTERVAL_SECONDS)
+    break
